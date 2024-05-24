@@ -8,11 +8,11 @@ vincoli intergrità: i numeri devono essere maggiori di 0 */
 using namespace std;
 
 int main(){
-    int c, k, n, val;
-    c=0;
-
-    cout<<"inserisci un numero: ";
+    int c=0, k, n, val;
+    cout<<"Ciao, benvenuto in questo programma che calcola i numeri maggiori del numero inserito"<<endl;
+    cout<<"inserisci numero di riferimento: ";
     cin>>k;
+
     
     cout<<"inserisci n valori inseriti: ";
     cin>>n; 
@@ -35,6 +35,6 @@ int main(){
 
     }
 
-    cout<<"I numeri maggiori di"<<k<<":"<<c<<endl;
+    cout<<"I numeri maggiori di "<<k<<"sono: "<<c<<endl;
     return 0;
 }

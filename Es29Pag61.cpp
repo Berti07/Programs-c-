@@ -3,8 +3,8 @@
 using namespace std;
 
 int main(){
-    float massainiziale, costantedecadimento, massaresidua, cont;
-    int anni;
+    float massainiziale, massaresidua2, costantedecadimento, massaresidua, anni;
+    int cont;
 
     cont=0;
 
@@ -16,34 +16,28 @@ int main(){
     cin>>costantedecadimento;
     cout<<"Inserisci gli anni trascorsi: "<<endl;
     cin>>anni;
+
+    if(massainiziale==0 && costantedecadimento==0){
+        cout<<"Errore! Reinserire i dati"<<endl; 
+    }
         
     }
     while(massainiziale<=0 or costantedecadimento<=0);
 
-   
-    if(massainiziale==0 && costantedecadimento==0){
-        cout<<"Errore! Reinserire i dati"<<endl; 
-    }
-
-    cont=0;
     massaresidua=massainiziale;
 
-    do
-    {
+    while (anni>0){
         massaresidua=massainiziale-(massaresidua*costantedecadimento); //massaresidua*costantedecadimento -> massa persa all'anno
         anni--;
-        
-    } while (anni>0);
+    } 
 
     cout<<"la massa residua e' di: "<<massaresidua<<endl;
 
     while(massaresidua>1){
-            massaresidua=massainiziale-(massaresidua*costantedecadimento);
+            massaresidua2=massainiziale-(massaresidua2*costantedecadimento);
             cont++;
     }
     
-    
-        
     cout<<"Ci vogliono "<<cont<<" anni per far si  che la massa residua del materiale si minore di 1g"<<endl;
     
 

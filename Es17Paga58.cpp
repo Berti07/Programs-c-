@@ -6,7 +6,7 @@
     dati di output: giorno della settimana
     vincoli di intergrità: 1<g<31  1<m<12    1582<a<2100*/
 
- using namespace std;
+using namespace std;
 
 int main(){
     

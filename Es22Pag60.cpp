@@ -14,7 +14,7 @@ int main()
     {
         cout << "Che abbonamento vuoi: 1, 2 o 3?" << endl;
         cin >> tipo;
-    } while (tipo < 1 || tipo > 3);
+    } while (tipo < 1 || tipo > 3);    
 
     do
     {
